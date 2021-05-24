@@ -1,0 +1,9 @@
+convert image to ovf template 
+
+ovftool "vi://root:System00%1@192.168.10.146/instc01" "instc01.ovf"
+example
+ovftool "vi://root:System00%231@192.168.10.146/MPP-Template" "L:\Upendra\MyBackup\146\Mpp-template.ovf"
+
+Import Image from OVF file 
+
+ovftool -ds=datastore1 -n=mpp-new "L:\Upendra\MyBackup\146\Mpp-template.ovf" vi://root:System00%231@192.168.10.146/
